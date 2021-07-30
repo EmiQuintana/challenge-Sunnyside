@@ -78,6 +78,11 @@ header {
     letter-spacing: 10px;
 }
 
+.arrow {
+    justify-content: center;
+    cursor: pointer;
+}
+
 .box-1 {
     width: 50%;
     padding: 15vh;
@@ -220,8 +225,7 @@ header {
       font-size: 20px;
       line-height: 30px;
       text-align: center;
-      width: 98
-      %;
+      width: 98%;
       margin-top: 60px;
   }
 
@@ -241,11 +245,49 @@ header {
       font-size: 16px;
   }
 
-  .photo {
+  .photos {
       width: 25%;
-      height: 60px;
+      height: 60%;
   }
 
-  .photo img {
+  .photos img {
       width: 100%;
   }
+
+  footer {
+      background-color: var(--color-footer);
+      padding: 6%;
+  }
+
+  .logo-img {
+      justify-content: center;
+  }
+
+  .footer-nav-bar {
+        justify-content: center;
+        margin: 15px 0;
+  }
+
+.footer-nav-bar ul {
+    list-style: none;
+}
+
+.nav-footer li {
+    margin-right: 20px;
+}
+
+.nav-footer li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.social {
+    justify-content: center;
+}
+
+.social a img {
+    margin: 20px 10px;
+}

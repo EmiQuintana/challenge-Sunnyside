@@ -38,23 +38,37 @@ header {
 }
 
 .nav {
-    align-items: center;
+    
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
 }
-
-.nav-bar {
-    list-style: none;
+.menu {
+    margin: 0 30px 0 0;
 }
-
-.nav-bar li {
-    margin-right: 20px;
-}
-
-.nav-bar li a {
+.menu a {
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: 600;
+    clear: right;
     text-decoration: none;
     color: white;
-    font-family: 'Barlow';
-    font-weight: 600;
-    font-size: 12px;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+label {
+    color: white;
+    margin: 0 10px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toogle {
+    display: none;
 }
 
 .btn {
@@ -81,6 +95,46 @@ header {
 .arrow {
     justify-content: center;
     cursor: pointer;
+}
+
+@media (max-width: 426px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0;
+        color: var(--color-text);
+        background-color: white;
+        width: 60vw;
+        z-index: 3;
+    }
+
+    #white {
+        background-color: white;
+    }
+
+    .btn {
+        background-color: hsl(51, 100%, 49%);
+        width: 25vw;
+        justify-content: center;
+    }
+
+    #toogle:checked + .menu {
+        display: block;
+    }
+
+    .hero {
+        font-size: 40px;
+    }
 }
 
 .box-1 {
@@ -191,6 +245,78 @@ header {
       height: 80vh;
   }
 
+  @media (max-width: 426px) {
+      .egg {
+          flex-direction: column-reverse;
+      }
+      .box-1 {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10vh;
+      }
+
+      .box-1 h2 {
+        font-size: 27px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .box-1 p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+      .box-2 {
+          width: 100%;
+      }
+
+      .box-2 img {
+          width: 100vw;
+      }
+
+      .box-3 {
+          width: 100%;
+      }
+
+      .box-3 img {
+        width: 100vw;
+    }
+    
+      .fill {
+        padding: 12px 17px 11px;
+        width: 40%;
+      }
+    
+      .stand {
+        flex-direction: column;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .box p {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .cherry  {
+        width: 100%;
+    }
+
+    .orange {
+        width: 100%;
+    }
+  }
+
   /*--CARDS--*/
 
   .client {
@@ -245,6 +371,32 @@ header {
       font-size: 16px;
   }
 
+  @media (max-width: 426px) {
+    
+    .client h3 {
+        letter-spacing: 5px;
+        font-size: 18px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        margin: 40px 0;
+    }
+    .card .descrip {
+        font-size: 18px;
+        line-height: 30px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .card .firma {
+        margin-top: 5%;
+    }
+  }
+
+   /*--PHOTOS--*/
+   
   .photos {
       width: 25%;
       height: 60%;
@@ -253,6 +405,10 @@ header {
   .photos img {
       width: 100%;
   }
+
+  
+
+  /*--FOOTER--*/
 
   footer {
       background-color: var(--color-footer);

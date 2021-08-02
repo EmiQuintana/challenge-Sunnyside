@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <meta property=”og:image” content=”https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80” />
-
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
@@ -17,14 +15,20 @@
     <nav class="container">
       <div class="flex main">
         <a href="#"><img src="./images/logo.svg" alt="logo Sunnyside"></a>
-      <div class="flex nav">
-        <ul class="flex nav-bar">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
-        <button type="button" class="btn">CONTACT</button>
+
+      <div class="nav">
+        <label for="toogle">&#9776;</label>
+        <input type="checkbox" id="toogle">
+        <div class="flex menu">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <div id="white">
+            <button type="button" class="btn">CONTACT</button>
+            </div>
+        </div>
       </div>
+      
       </div>
     </nav>
     <div>
@@ -43,6 +47,7 @@
         <button type="button" class="fill">LEARN MORE</button>
       </div>
       <div class="box-2">
+        <img src="./images/mobile/image-transform.jpg" alt="egg">
       </div>
     </div>
   </section>
@@ -50,6 +55,7 @@
   <section>
     <div class="flex stand">
       <div class="box-3">
+        <img src="./images/mobile/image-stand-out.jpg" alt="">
       </div>
       <div class="container box-1">
         <h2>Stand out to the right audience</h2>
@@ -59,8 +65,8 @@
     </div>
   </section>
 
-  <section class="boxes">
-    <div class="flex">
+  <section >
+    <div class="flex boxes">
       <div class="flex box cherry">
         <h3>Graphic Design</h3>
         <p>Great design makes you memorable. We deliver astwork that underscores your brand message and captures potential client's attention.</p>
@@ -99,12 +105,10 @@
   </section>
 
   <section class="flex photos">
-    
       <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
       <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
       <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
       <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
-
   </section>
 
   <footer>

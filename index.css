@@ -101,6 +101,8 @@ label {
     label {
         display: block;
         cursor: pointer;
+    
+        right: 30px;
     }
 
     .menu {
@@ -130,6 +132,8 @@ label {
 
     #toogle:checked + .menu {
         display: block;
+        position: relative;
+        right: 30px;
     }
 
     .hero {
@@ -287,7 +291,7 @@ label {
     
       .fill {
         padding: 12px 17px 11px;
-        width: 40%;
+        width: 60%;
       }
     
       .stand {
@@ -304,7 +308,7 @@ label {
     }
 
     .box p {
-        width: 70%;
+        width: 80%;
         font-size: 15px;
     }
 
@@ -396,7 +400,7 @@ label {
   }
 
    /*--PHOTOS--*/
-   
+
   .photos {
       width: 25%;
       height: 60%;
